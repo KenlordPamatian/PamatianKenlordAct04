@@ -1,0 +1,549 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*{
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #fef5ed ;
+    padding-left:30rem;
+}
+
+section{
+    padding:1rem 5%;
+    min-height: 100vh;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: #222;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.header-container{
+    padding: 4rem 4rem;
+    width: 30rem;
+}
+
+header .logo{
+    animation: heart 1s ease-in backwards infinite;
+}
+
+@keyframes heart {
+    0%{
+        transform: scale(1.0);
+    }
+
+    50%{
+        transform: scale(1.05);
+    }
+
+    100%{
+        transform: scale(1.0);
+    }
+}
+
+header .navbar a{
+    display: block;
+    font-size: 2rem;
+    color: peachpuff;
+    margin: 2rem 0;
+}
+
+header .navbar a:hover{
+    letter-spacing: .2rem;
+    color: orange
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.home .image{
+    flex:1 1 40rem;
+}
+
+.home .image img{
+    width: 100%;
+    border-radius: 8px;
+}
+
+.home .content{
+    flex:1 1 40rem;
+}
+
+.home .content .hi{
+    font-size: 4rem;
+    color: var(--main-color);
+}
+
+.home .content h3{
+    font-size: 4.5rem;
+    color: #ffa400;
+    text-transform: uppercase;
+}
+
+.home .content h3 span{
+    color: #c36a2d;
+    text-transform: uppercase;
+}
+
+.home .content .info{
+    font-size: 2rem;
+    color: #111;
+    padding: .5rem 0;
+    text-align: justify;
+}
+
+.home .content .text{
+    font-size: 2.7rem;
+    color: BROWN;
+    font-weight: bolder;
+    padding: 3rem 0;
+}
+
+#about-section{
+    display: flex;
+}
+
+.about .heading{
+    font-size: 8rem;
+    color: brown;
+    font-weight: bolder;
+}
+
+.about .heading span{
+    color: #ffa400;
+}
+
+.text1{
+    color: brown;
+    font-size: 1.7rem;
+    padding-left: .2rem;
+    font-weight: bolder;
+    
+}
+
+.about .content{
+    display: flex;
+}
+
+.about .content .box-container{
+    padding-left: 5rem;
+    line-height: 3rem;
+    text-align: justify;
+    
+}
+
+.about .content .box-container .box p{
+    color: #f78812;
+    font-weight: bolder;
+    font-size: 2rem;
+    line-height: 2;
+    text-transform: capitalize;
+}
+
+.about .content .box-container .box span{
+    color:brown;
+}
+
+.about .image{
+    flex:1 1 40rem;
+
+}
+
+#about-section .about .tup{
+    width: 50%;
+    float: left;
+    
+}
+
+
+        /* END OF ABOUT ME */
+
+
+
+
+
+        /* END OF MY SKILLS */
+
+.skill .heading{
+    font-size: 8rem;
+    color: brown;
+    line-height: 1;
+    font-weight: bolder;
+    padding-top: 10rem;
+    
+}
+
+.skill .heading span{
+    color: #ffa400;
+}
+
+.sample{
+    display: flex;
+    flex-direction: column;
+    padding: 7rem;
+}
+
+.list h3{
+    margin-top: 50px;
+    line-height: 1.5;
+    font-size: 2rem;
+    color: brown;
+    font-weight: bolder;
+    text-align: justify;
+}
+
+.skill .list{
+    list-style: none;
+    width: 500px;
+    margin: 60px auto;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25) 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.skill li{
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.bar{
+    background: #353b48;
+    display: block;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden; 
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.bar:hover{
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.bar span{
+    height: 20px;
+    float: left;
+    background: linear-gradient(134deg, rgba(195,106,45, 0.8)0%, rgba(255,208,127, 0.8)100%);
+}
+
+.html{
+    width: 70%;
+    animation: html 3.5s;
+}
+
+.c{
+    width: 85%;
+    animation: c 3.5s;
+}
+
+.python{
+    width: 55%;
+    animation: python 3.5s;
+}
+
+.java{
+    width: 75%;
+    animation: java 3.5s;
+}
+
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+@keyframes c{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 85%;
+    }
+}
+@keyframes python{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 55%;
+    }
+}
+@keyframes java{
+    0%{
+        width: 0%
+    }
+    100%{
+        width: 75%
+    }
+}
+
+        /* END OF MY SKILLS */
+
+        /* MY PROJECTS START */
+
+.project .heading{
+    font-size: 8rem;
+    color: brown;
+    line-height: 1.5rem;
+    font-weight: bolder;
+    padding-top: 10rem;
+
+}
+
+.project .heading span{
+    color: #ffa400;
+}
+
+.projectext{
+    color: brown;
+    font-size: 2.5rem;
+    padding-left: .2rem;
+    padding-top: 1cm;
+    padding-bottom: 30px;
+}
+
+/* .project .image{
+    flex:1 1 40rem;
+}
+
+.project .image img{
+    width: 100%;  
+} */
+
+.project .image .art{
+    width: 10%;
+}
+
+.projectext2{
+    color: brown;
+    font-size: 2.5rem;
+    padding-left: .2rem;
+    padding-top: 3cm;
+    padding-bottom: 30px;
+
+}
+
+.projectext3{
+    color: brown;
+    font-size: 2.5rem;
+    padding-left: .2rem;
+    padding-top: 3cm;
+    padding-bottom: 30px;
+
+}
+
+.contact .heading{
+    font-size: 8rem;
+    color: brown;
+    line-height: 1.5rem;
+    font-weight: bolder;
+    padding-top: 5rem;
+
+}
+
+.contact .heading span{
+    color: #ffa400;
+}
+
+.contact .icons-container{
+    display: flex;
+    gap:1.5rem;
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
+    padding: 200px;
+    padding-top: 13rem;
+}
+
+.contact .icons-container .icons{
+    flex:1 1 25rem;
+    text-align: center;
+    padding: 2rem;
+    background:#fff;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0,.1);
+    border-radius: .5rem;
+}
+
+.conact .icons-container .icon i{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    background: var(--main-color);
+    color:#fff;
+    border-radius: 50%;
+}
+
+.contact .icons-container .icons h3{
+    color:#111;
+    font-size: 2rem;
+    padding: .5rem 0;
+    padding-top: 1rem;
+}
+
+.contact .icons-container .icons p{
+    color:#666;
+    font-size: 1.7rem;
+}
+
+.contact .icons-container .finaltext p{
+    color: brown;
+    font-size: 3rem;
+    padding: 70px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+@media only screen and (max-width: 768px){
+    header{
+        width: 100%;
+        height: 13%;
+    }
+    .header-container{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header .logo{
+        width: 20%;
+    }
+    header .navbar a{
+        display: inline-block;
+        padding-left: 5px;
+        font-size: 10px;
+    }
+    body{
+        padding: 140px 0 0 0;
+    }
+    .hi{
+        font-family: monospace;
+    }
+    .home .content{
+        text-align: center;
+    }
+    .home .content .hi{
+        font-size: 25px;
+        text-transform: lowercase;
+    }
+    
+    .home .content .info{
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        text-align: center;
+        font-weight: bolder;
+    }
+    .home .image{
+        border-radius: 8px;
+    }
+    .about .heading{
+        font-size: 40px;
+        line-height: 1;
+        text-align: center;
+    }
+    .skill .heading{
+        font-size: 40px;
+        text-align: center;
+    }
+    .project .heading{
+        font-size: 40px;
+        text-align: center;
+    }
+    .projectext{
+        font-size: 20px;
+        text-align: justify;
+    }
+    .projectext2{
+        font-size: 20px;
+        text-align: justify;
+    }
+    .projectext3{
+        font-size: 20px;
+        text-align: justify;
+    }
+    .project .image{
+        width: 20%;
+    }
+    .contact .heading{
+        font-size: 40px;
+        text-align: center;
+    }
+    .contact .icons-container{
+        padding: 30px 0 0 0;
+    }
+
+    #project-section .image .todo{
+        width: 100%;
+    }
+
+    #project-section .image .mobile{
+        width: 100%;
+    }
+
+    #project-section .image .art{
+        width: 100%;
+    }
+
+    #project-section .image .artapp{
+        width: 100%;
+    }
+
+    #project-section .image .encryption{
+        width: 100%;
+    }
+
+    #project-section .image .encrypt{
+        width: 100%;
+    }
+
+    #about-section .about .tup{
+        float: none;
+        width: 100%;
+        padding-bottom: 5rem;
+
+    }
+
+    .about .content .box-container{
+        padding-left: 0rem;
+    }
+
+    .about .content .box-container .box p{
+        font-size: 1.6rem;
+    }
+
+    .text1{
+        padding-bottom: 5rem;
+    }
+
+    #skill-section .list ul h3{
+        padding-bottom: 2rem;
+        font-size: 1.5rem;
+    }
+}
