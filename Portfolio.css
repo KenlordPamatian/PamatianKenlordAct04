@@ -62,6 +62,10 @@ header .logo{
     }
 }
 
+header .navbar{
+    display: block;
+
+}
 header .navbar a{
     display: block;
     font-size: 2rem;
@@ -71,7 +75,7 @@ header .navbar a{
 
 header .navbar a:hover{
     letter-spacing: .2rem;
-    color: orange
+    color: orange;
 }
 
 .home{
@@ -231,6 +235,10 @@ header .navbar a:hover{
     padding: 10px;
 }
 
+.list .progress{
+    border-radius: 2000px;
+    
+}
 .bar{
     background: #353b48;
     display: block;
@@ -242,68 +250,10 @@ header .navbar a:hover{
     transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
 }
 
-.bar:hover{
+.progress:hover{
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
-.bar span{
-    height: 20px;
-    float: left;
-    background: linear-gradient(134deg, rgba(195,106,45, 0.8)0%, rgba(255,208,127, 0.8)100%);
-}
-
-.html{
-    width: 70%;
-    animation: html 3.5s;
-}
-
-.c{
-    width: 85%;
-    animation: c 3.5s;
-}
-
-.python{
-    width: 55%;
-    animation: python 3.5s;
-}
-
-.java{
-    width: 75%;
-    animation: java 3.5s;
-}
-
-@keyframes html{
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 70%;
-    }
-}
-@keyframes c{
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 85%;
-    }
-}
-@keyframes python{
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 55%;
-    }
-}
-@keyframes java{
-    0%{
-        width: 0%
-    }
-    100%{
-        width: 75%
-    }
-}
 
         /* END OF MY SKILLS */
 
